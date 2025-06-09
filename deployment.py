@@ -7,6 +7,13 @@ from sklearn.datasets import make_classification
 from sklearn.preprocessing import StandardScaler
 from sklearn.utils import resample
 
+os.chdir('C:\\Users\\USUARIO\\Desktop\\Trabajo\\Iberoamericana\\Investigación\\EDIT')
+print(os.getcwd())
+print(os.listdir())
+
+X = pd.read_csv("Datos\\EDIT_X_2019_2020.csv", sep=';')
+print(EDIT_19_20.shape) 
+
 X, y = make_classification(n_samples=1000, n_features=10, n_informative=6,
                            n_redundant=2, weights=[0.8, 0.2], random_state=42)
 

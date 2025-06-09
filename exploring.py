@@ -5,7 +5,6 @@ import seaborn as sns
 import os
 from matplotlib.ticker import PercentFormatter
 
-# Equivalent to `summarytools::freq` for frequency tables
 def freq_table(series, report_nas=False, order='freq'):
     if report_nas:
         counts = series.value_counts(dropna=False)
